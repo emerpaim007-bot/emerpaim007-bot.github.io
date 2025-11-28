@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = [
+        "https://docs.google.com/forms/d/e/1FAIpQLSeS3zHIIpQnDZB_dj96348JmO5_Gj-cCAZ5uAEIVClAsHuOZQ/viewform?usp=publish-editor",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdb6Z4vcYckwee4az_wPMU1uHo8JqtfetEga7XmnHukoS8fmQ/viewform?usp=publish-editor"
+      ];
+
+      const choice = Math.floor(Math.random() * links.length);
+      window.location.href = links[choice];
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 80px;
+      color: #333;
+    }
+  </style>
+
+</head>
+<body>
+  <h2>Redirecionando para o formulário...</h2>
+  <p>Por favor, aguarde.</p>
+</body>
+</html>
